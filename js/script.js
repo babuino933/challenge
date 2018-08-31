@@ -1,0 +1,127 @@
+	window.onload = function(){
+		document.getElementById("tela").style.zIndex = "-1";
+		//Constantes que armazenam o código de cada seta do teclado
+
+
+
+		var cnv = document.querySelector("canvas");
+		var	ctx = cnv.getContext("2d");
+		var spriteSheet = new Image();
+		spriteSheet.src = "imgs/img.png";
+		var jogador = new Jogador(spriteSheet);
+		var camera = new Camera(cnv);
+		var scene = new Image();
+		scene.src = "imgs/cenatotal.png";
+
+	//	var sprites = [];
+		//this.jogador = new Sprite(50, 50);
+		jogador.speed = 2;
+		//sprites.push(jogador);
+	//	var blocks = [];
+
+	this.sprites = [];
+	this.blocks = [];
+	sprites.push(jogador);
+//	img,posX, posY, width, height, color
+	var paredecima = new Sprite(0,0, 0, 800, 15, "#000000");
+	sprites.push(paredecima);
+	blocks.push(paredecima);
+	var gameworld = {
+		img:scene,
+		x: 0,
+		y: 0,
+		width: 4436,
+		height: 2608
+	};
+
+	sprites.push(gameworld);
+
+
+
+
+
+	teleport();
+
+		window.addEventListener("keydown",keydownHandler,false);
+		window.addEventListener("keyup",keyupHandler,false);
+		jogador.posX = Math.max(0, Math.min(cnv.width - jogador.width, jogador.posX));
+		jogador.posY = Math.max(0, Math.min(cnv.height - jogador.height, jogador.posY));
+		function desenhaparedes(){
+	    for(var i in blocks){
+	      var spr = blocks[i];
+	      if(spr.visible){
+	        ctx.fillStyle = spr.color;
+	        ctx.fillRect(spr.posX, spr.posY, spr.width, spr.height);
+	      }
+	    }
+	    for(var i in blocks){
+	      var blk = blocks[i];
+	      if(blk.visible){
+	        blockRect(jogador, blk);
+	      }
+	    }
+	  }
+
+		function keydownHandler(e){
+			jogador.teclaapertada(e.keyCode);
+
+		}
+
+		function keyupHandler(e){
+			jogador.teclaup(e.keyCode);
+		}
+
+		//Quando a imagem é carregada, o programa é iniciado
+		spriteSheet.onload = function(){
+			init();
+			jogador.posX = 2233;
+			jogador.posY = 1268;
+		}
+
+		function init(){
+			loop();
+		}
+		function update(){
+			jogador.move();
+			camera.movcamera(jogador.posX,jogador.posY,jogador.height,jogador.width);
+			desenhaparedes();
+		}
+
+		function draw(){
+			ctx.save();
+			ctx.translate(-camera.x,-camera.y);
+
+			ctx.clearRect(0,0,cnv.width,cnv.height);
+			ctx.drawImage(scene,0,0,4436,2608,0,0,4436,2608);
+			jogador.draw(ctx);
+			ctx.restore();
+
+
+		}
+
+
+		function loop(){
+			window,requestAnimationFrame(loop,cnv);
+			update();
+			draw();
+			teleportajogador(jogador,1126,672);
+		//	paredecolide();
+		}
+
+	}
+
+	function validate() {
+		if (document.formLog.user.value == "" || document.formLog.email.value == "" || document.formLog.pass.value == "") {
+			alert("Preencha todos os campos!!");
+			return false;
+		}
+		return true;
+	}
+
+	function validate2() {
+		if (document.formLog.user.value == "" || document.formLog.pass.value == "") {
+			alert("Preencha todos os campos!!");
+			return false;
+		}
+		return true;
+	}
