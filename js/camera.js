@@ -1,4 +1,4 @@
-  function Camera(cnv) {
+function Camera(cnv) {
   this.x = 0;
   this.y = 0;
   this.width = cnv.width;
@@ -11,4 +11,4 @@
       this.y = (jogadorY + (jogadorheight/2)) - (this.height/2);
     }
   }
-  }
+}

@@ -12,7 +12,7 @@ function blockRect(r1, r2) {
   if(Math.abs(catX) < sumHalfWidth && Math.abs(catY) < sumHalfHeight){
 
 
-  	
+
 
     var overlapX = sumHalfWidth - Math.abs(catX);
     var overlapY = sumHalfHeight - Math.abs(catY);

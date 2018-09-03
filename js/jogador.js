@@ -6,36 +6,36 @@ class Jogador extends Sprite {
     this.RIGHT = 39;
     this.DOWN = 40;
     this.posX = this.posY = 0;
-		this.width = 24;
-		this.height = 32;
+    this.width = 24;
+    this.height = 32;
 
   }
 
   teclaapertada(pKey){
     switch(pKey){
       case this.RIGHT:
-        this.mvRight = true;
-        this.mvLeft = false;
-        this.mvUp = false;
-        this.mvDown = false;
+      this.mvRight = true;
+      this.mvLeft = false;
+      this.mvUp = false;
+      this.mvDown = false;
       break;
       case this.LEFT:
-        this.mvRight = false;
-        this.mvLeft = true;
-        this.mvUp = false;
-        this.mvDown = false;
+      this.mvRight = false;
+      this.mvLeft = true;
+      this.mvUp = false;
+      this.mvDown = false;
       break;
       case this.UP:
-        this.mvRight = false;
-        this.mvLeft = false;
-        this.mvUp = true;
-        this.mvDown = false;
+      this.mvRight = false;
+      this.mvLeft = false;
+      this.mvUp = true;
+      this.mvDown = false;
       break;
       case this.DOWN:
-        this.mvRight = false;
-        this.mvLeft = false;
-        this.mvUp = false;
-        this.mvDown = true;
+      this.mvRight = false;
+      this.mvLeft = false;
+      this.mvUp = false;
+      this.mvDown = true;
       break;
     }
   }
@@ -43,32 +43,32 @@ class Jogador extends Sprite {
   teclaup(pKey2){
     switch(pKey2){
       case this.RIGHT:
-        this.mvRight = false;
+      this.mvRight = false;
       break;
       case this.LEFT:
-        this.mvLeft = false;
+      this.mvLeft = false;
       break;
       case this.UP:
-        this.mvUp = false;
+      this.mvUp = false;
       break;
       case this.DOWN:
-        this.mvDown = false;
+      this.mvDown = false;
       break;
     }
   }
   draw(ctx){
     ctx.drawImage(	this.img,	//Imagem de origem
-            //Captura da imagem
-            this.srcX,	//Origem da captura no eixo X
-            this.srcY,	//Origem da captura no eixo Y
-            this.width,	//Largura da imagem que será capturada
-            this.height,//Altura da imagem que será capturada
-            //Exibição da imagem
-            this.posX,	//Posição no eixo X onde a imagem será exibida
-            this.posY,	//Posição no eixo Y onde a imagem será exibida
-            this.width,	//Largura da imagem a ser exibida
-            this.height	//Altura da imagem a ser exibida
-          );
+      //Captura da imagem
+      this.srcX,	//Origem da captura no eixo X
+      this.srcY,	//Origem da captura no eixo Y
+      this.width,	//Largura da imagem que será capturada
+      this.height,//Altura da imagem que será capturada
+      //Exibição da imagem
+      this.posX,	//Posição no eixo X onde a imagem será exibida
+      this.posY,	//Posição no eixo Y onde a imagem será exibida
+      this.width,	//Largura da imagem a ser exibida
+      this.height	//Altura da imagem a ser exibida
+    );
     this.animation();
   }
 

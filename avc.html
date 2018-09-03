@@ -1,22 +1,121 @@
 
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8" />
-      <title>joguenho</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>joguenho</title>
 
-      <script src="js/collide.js"></script>
-      <script src="js/sprite.js"></script>
-      <script src="js/jogador.js"></script>
-      <script src="js/script.js"></script>
-      <script src="js/parede.js"></script>
-      <script src="js/teleport.js"></script>
-      <script src="js/camera.js"></script>
+<script src="js/collide.js"></script>
+<script src="js/sprite.js"></script>
+<script src="js/jogador.js"></script>
+<script src="js/script.js"></script>
+<script src="js/parede.js"></script>
+<script src="js/teleport.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/cseteste.js"></script>
 
+<style media="screen">
+#cse{
+position: fixed;
+margin-top: 450px;
+margin-left: 500px;
+visibility: hidden;
+width: 400px;
+}
+#csebd{
+visibility: hidden;
+margin-left: 300px;
+margin-top: 100px;
+position: fixed;
+background-image: url('imgs/computador.png');
+background-repeat: no-repeat;
+background-position: center;
+width: 800px;
+height: 600px;
 
+}
+#tela{
 
-  </head>
-  <body>
-    <canvas id="tela" width="800" height="600" style="z-index:-1;"></canvas>
+margin-left: 300px;
+margin-top: 100px;
+}
+#prova{
+  visibility: hidden;
+position: fixed;
+height: 600px;
+width: 800px;
+background-color: black;
+margin-left: 300px;
+margin-top:  100px;
 
-  </body>
-  </html>
+}
+#botaocse{
+  float: right;
+}
+</style>
+<script>
+function fechacse() {
+document.getElementById("cse").style.visibility = "hidden";
+document.getElementById("csebd").style.visibility = "hidden";
+}
+</script>
+</head>
+<body>
+<div id="prova">
+<form id="questionario" name ="questionario" method = "post" action="" style="color:white;">
+1) Observe o video abaixo, e assinale o que ele representa:
+<p>
+<label>
+<input type="radio" name="questao1" value="a" /> A) Melancia;</label>
+<br>
+<label>
+<input type="radio" name="questao1" value="b" /> B) Abobora;</label>
+<br>
+<label>
+<input type="radio" name="questao1" value="c" /> C) Abacate;</label>
+<br>
+<label>
+<input type="radio" name="questao1" value="d" /> D) Laranja.</label>
+<br>
+<br>
+
+<h5 class="font_1">1) Observe o video abaixo, e assinale o que ele representa:</h5>
+
+<label>
+<input type="radio" name="questao2" value="a" /> A) Melancia;</label>
+<br>
+<label>
+<input type="radio" name="questao2" value="b" /> B) Abobora;</label>
+<br>
+<label>
+<input type="radio" name="questao2" value="c" /> C) Abacate;</label>
+<br>
+<label>
+  <input type="radio" name="questao2" value="d" /> D) Laranja.</label>
+  <br>
+  <br>
+</div>
+<script>
+
+(function() {
+  var cx = '013956736705928351261:dgwo9jpwo6m';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+<div id="csebd">
+  <button type="button" id="botaocse" class="close" aria-label="Close" onclick="fechacse()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div id="cse">
+  <gcse:search ></gcse:search>
+</div>
+
+<canvas id="tela" width="800" height="600" style="z-index:-1;"></canvas>
+
+</body>
+</html>
