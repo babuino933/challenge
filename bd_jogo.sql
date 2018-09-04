@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04/09/2018 às 02:16
+-- Tempo de geração: 04/09/2018 às 03:03
 -- Versão do servidor: 5.7.11-log
 -- Versão do PHP: 5.6.15
 
@@ -35,16 +35,18 @@ CREATE TABLE `jogadores` (
   `data_cadastro` datetime NOT NULL COMMENT 'data do cadastro do jogador',
   `email` varchar(45) NOT NULL COMMENT 'email do jogador',
   `senha` varchar(60) NOT NULL COMMENT 'senha do jogador',
-  `data_nasci` date NOT NULL COMMENT 'data de nascimento do jogador'
+  `data_nasci` date NOT NULL COMMENT 'data de nascimento do jogador',
+  `nivel_prova` tinyint(1) NOT NULL,
+  `nmr_prova` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='tabela dos jogadores';
 
 --
 -- Fazendo dump de dados para tabela `jogadores`
 --
 
-INSERT INTO `jogadores` (`id`, `nome`, `sobrenome`, `usuario`, `avatar`, `data_cadastro`, `email`, `senha`, `data_nasci`) VALUES
-(1, 'pedro', 'mainak', 'nuel', '0', '2018-08-24 03:19:03', 'predo@g', '123', '2018-08-08'),
-(2, 'nuel', 'mainpinador', 'pinero', '0', '2018-08-24 03:19:49', 'pina@pracaralho', '123', '2018-08-08');
+INSERT INTO `jogadores` (`id`, `nome`, `sobrenome`, `usuario`, `avatar`, `data_cadastro`, `email`, `senha`, `data_nasci`, `nivel_prova`, `nmr_prova`) VALUES
+(1, 'emmanuel', 'dallagnolo', 'nuel', '0', '2018-08-24 03:19:03', 'emmanueldallagnolo@gmail.com', '123', '2018-08-08', 0, 0),
+(2, 'andre', 'bitencourt', 'velho', '0', '2018-08-24 03:19:49', 'andre@gmail.com', '123', '1945-08-08', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -86,7 +88,8 @@ CREATE TABLE `niveis` (
 --
 
 INSERT INTO `niveis` (`id`, `nome`) VALUES
-(1, 'Fácil');
+(1, 'Fácil'),
+(2, 'médio');
 
 -- --------------------------------------------------------
 
@@ -124,7 +127,8 @@ CREATE TABLE `provas` (
 INSERT INTO `provas` (`id`, `temas_id`, `niveis_id`, `nome`) VALUES
 (1, 1, 1, 'Introdução HTML'),
 (2, 2, 1, 'Introdução PHP'),
-(3, 3, 1, 'Introdução CSS');
+(3, 3, 1, 'Introdução CSS'),
+(4, 4, 2, 'Introdução Java Script');
 
 -- --------------------------------------------------------
 
@@ -178,7 +182,17 @@ INSERT INTO `questoes` (`enunciado`, `id`, `alternativa_a`, `alternativa_b`, `al
 ('Qual propriedade é usada para alterar a cor do plano de fundo?', 27, 'color', 'background-color', 'bgcolor', 'background-collor', 'B', 1, 3),
 ('Como você adiciona uma cor de fundo para todos os elementos <h1>?', 28, 'h1 {background-color:#FFFFFF;}', 'all.h1 {background-color:#FFFFFF;}', 'h1.all {background-color:#FFFFFF;}', 'h1({background-color:#FFFFFF;})', 'B', 1, 3),
 ('Qual propriedade CSS é usada para alterar a cor do texto de um elemento?', 29, 'text-color', 'color', 'fgcolor', 'color_text', 'B', 1, 3),
-('Qual propriedade CSS controla o tamanho do texto?', 30, 'text-size', 'font-size', 'text-style', 'font-style', 'B', 1, 3);
+('Qual propriedade CSS controla o tamanho do texto?', 30, 'text-size', 'font-size', 'text-style', 'font-style', 'B', 1, 3),
+('Dentro de qual elemento HTML colocamos o JavaScript?', 31, '<js>', '<scripting>', '<script>', '<javascript>', 'C', 1, 4),
+('Qual é a sintaxe correta do JavaScript para alterar o conteúdo do elemento HTML?  <p id="demo">This is a demonstration.</p>', 32, 'document.getElementById("demo").innerHTML = "Hello World!";', '#demo.innerHTML = "Hello World!";', 'document.getElement("p").innerHTML = "Hello World!";', 'document.getElementByName("p").innerHTML = "Hello World!";', 'A', 1, 4),
+('Onde é o lugar correto para inserir um JavaScript?', 33, 'The <head> section', 'Both the <head> section and the <body> section are correct', 'The <body> section', 'None of these', 'B', 1, 4),
+('Qual é a sintaxe correta para se referir a um script externo chamado "xxx.js"?', 34, '<script src="xxx.js">', '<script href="xxx.js">', '<script name="xxx.js">', 'none of these', 'A', 1, 4),
+('Como você escreve "Hello World" em uma caixa de alerta?', 35, 'msg("Hello World");', 'alertBox("Hello World");', 'msgBox("Hello World");', 'alert("Hello World");', 'D', 1, 4),
+('Como você cria uma função em JavaScript?', 36, 'function myFunction()', 'function = myFunction()', 'function:myFunction()', 'function::myFunction()', 'A', 1, 4),
+('Como você chama uma função chamada "myFunction"?', 37, 'myFunction()', 'call function myFunction()', 'call myFunction()', 'go myFunction()', 'A', 1, 4),
+('Como escrever uma instrução IF em JavaScript?', 38, 'if i == 5 then', 'if i = 5', 'if (i == 5)', 'if i = 5 then', 'C', 1, 4),
+('Como escrever uma instrução IF para executar algum código se "i" não for igual a 5?', 39, 'if i <> 5', 'if i =! 5 then', 'if (i != 5)', 'if (i <> 5)', 'C', 1, 4),
+('Como um loop FOR inicia?', 40, 'for (i = 0; i <= 5; i++) ', 'for (i <= 5; i++)', 'for i = 1 to 5', 'for (i = 0; i <= 5)', 'A', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -198,7 +212,8 @@ CREATE TABLE `temas` (
 INSERT INTO `temas` (`id`, `nome`) VALUES
 (1, 'HTML'),
 (2, 'PHP'),
-(3, 'CSS');
+(3, 'CSS'),
+(4, 'Java Script');
 
 --
 -- Índices de tabelas apagadas
@@ -281,17 +296,17 @@ ALTER TABLE `professores`
 -- AUTO_INCREMENT de tabela `provas`
 --
 ALTER TABLE `provas`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'identicação das provas', AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'identicação das provas', AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de tabela `questoes`
 --
 ALTER TABLE `questoes`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'identificação dos níveis', AUTO_INCREMENT=31;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'identificação dos níveis', AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT de tabela `temas`
 --
 ALTER TABLE `temas`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'identificação do tema', AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'identificação do tema', AUTO_INCREMENT=5;
 --
 -- Restrições para dumps de tabelas
 --
