@@ -33,7 +33,8 @@ window.onload = function(){
 
 	teleport();
 	paredes();
-	Cseteste();
+	Cseabrir();
+	Provaabrir();
 
 	window.addEventListener("keydown",keydownHandler,false);
 	window.addEventListener("keyup",keyupHandler,false);
@@ -99,6 +100,7 @@ window.onload = function(){
 		draw();
 		teleportajogador(jogador,1126,672);
 		funcaocse(jogador);
+		funcaoprova(jogador);
 		//	paredecolide();
 	}
 

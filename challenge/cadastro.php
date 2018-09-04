@@ -8,14 +8,14 @@
   body {
     background-image: url("imgs/cadernocadastro.png");
     background-repeat: no-repeat;
-    
+
 
     }
   </style>
 </head>
 <body>
 
-  <form action="verificcadastro.php" class="form-signin" method="post">
+  <form action="includes/verificcadastro.php" class="form-signin" method="post">
     <h1 class="h3 mb-3 font-weight-normal">plisignin</h1>
     <br>
     <input type="text" id="inputnome" name="inputnome" placeholder="Nome" autofocus>

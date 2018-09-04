@@ -30,7 +30,7 @@
           <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required autofocus>
           <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
           <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-          <a href="includes/cadastro.php">Ainda nao sou cadastrado</a>
+          <a href="cadastro.php">Ainda nao sou cadastrado</a>
 
           <p class="mt-5 mb-3 text-muted">copelraite 2017-2018</p>
         </form>

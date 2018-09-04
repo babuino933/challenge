@@ -1,8 +1,8 @@
-function Cseteste() {
+function Cseabrir() {
   ////////////////////////////////
   //pEsquerda, pDireita, pCima, pBaixo, pPosDestinoX, pPosDestinoY
   this.csetest = [];
-  var testecse = new Teste(3893,3944,1237,1343);
+  var testecse = new CseComputador(3893,3944,1237,1343);
   this.csetest.push(testecse);
 
 }
@@ -19,7 +19,7 @@ function funcaocse(jogador){
 
 }
 
-function Teste(pEsquerda, pDireita, pCima, pBaixo){
+function CseComputador(pEsquerda, pDireita, pCima, pBaixo){
   this.esquerda = pEsquerda,
   this.direita = pDireita,
   this.cima = pCima,
