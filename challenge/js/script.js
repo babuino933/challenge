@@ -12,7 +12,7 @@ window.onload = function(){
 	var camera = new Camera(cnv);
 	var scene = new Image();
 	scene.src = "imgs/cenatotal.png";
-	jogador.speed = 7;
+	jogador.speed = 8;
 
 	this.sprites = [];
 	sprites.push(jogador);

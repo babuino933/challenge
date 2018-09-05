@@ -1,5 +1,5 @@
 
-<<?php session_start(); ?>>
+<?php session_start(); ?>
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css"/>

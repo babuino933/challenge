@@ -7,7 +7,7 @@ class Jogador extends Sprite {
     this.DOWN = 40;
     this.posX = this.posY = 0;
     this.width = 24;
-    this.height = 32;
+    this.height = 36;
 
   }
 
@@ -97,7 +97,7 @@ class Jogador extends Sprite {
     if(this.mvLeft || this.mvUp || this.mvRight || this.mvDown){
       //Caso qualquer seta seja pressionada, o contador de animação é incrementado
       this.countAnim++;
-      if(this.countAnim >= 40){
+      if(this.countAnim >= 20){
         this.countAnim = 0;
       }
       this.srcX = Math.floor(this.countAnim / 5) * this.width;
@@ -127,20 +127,6 @@ class Jogador extends Sprite {
   }
 
   //Anima a figura
-  animation(){
-    if(this.mvLeft || this.mvUp || this.mvRight || this.mvDown){
-      //Caso qualquer seta seja pressionada, o contador de animação é incrementado
-      this.countAnim++;
-      if(this.countAnim >= 40){
-        this.countAnim = 0;
-      }
-      this.srcX = Math.floor(this.countAnim / 5) * this.width;
-    } else {
-      //Caso nenhuma tecla seja pressionada, o contador de animação é zerado e a imagem do personagem parado é exibida
-      this.srcX = 0;
-      this.countAnim = 0;
-    }
-  }
 
 
 }
