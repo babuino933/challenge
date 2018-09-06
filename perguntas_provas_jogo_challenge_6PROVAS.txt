@@ -1,0 +1,446 @@
+﻿QUESTOES PARA O JOGO
+
+PROVA 1 HTML
+
+1 - O que significa HTML?
+
+A - Home Tool Markup Language
+B - Hyperlinks and Text Markup Language
+C - Hyper Text Markup Language     	ALTERNATIVA CORRETA
+D - hyper Tool and Text Markup Language
+ 
+2 - Choose the correct HTML element for the largest heading:
+Escolha o elemento HTML correto para o maior cabeçalho
+
+A - <head>
+B - <heading>
+C - <h1> ALTERNATIVA CORRETA
+D - <h6>
+
+3- What is the correct HTML element for inserting a line break? 
+Qual é o elemento HTML correto para inserir uma quebra de linha?
+
+A - <br> ALTERNATIVA CORRETA
+B - <break>
+C - <lb>
+D - <div>
+
+4 - What is the correct HTML for adding a background color?
+Qual é o HTML correto para adicionar uma cor de plano de fundo?
+
+A - <body style="background-color:yellow;"> ALTERNATIVA CORRETA
+B - <body bg="yellow">
+C - <background>yellow</background>
+D - <background color="yellow">
+
+5 - Choose the correct HTML element to define important text
+Escolha o elemento HTML correto para definir o texto importante
+
+A - <important>
+B - <i>
+C - <b>
+D - <strong> ALTERNATIVA CORRETA
+
+6 - Choose the correct HTML element to define emphasized text
+Escolha o elemento HTML correto para definir o texto enfatizado
+
+A - <italic>
+B - <i>
+C - <em> ALTERNATIVA CORRETA
+D - <br> 
+
+7 - Which character is used to indicate an end tag?
+Qual caractere é usado para indicar uma tag final?
+
+A - <   
+B - *
+C - ^
+D - /    ALTERNATIVA CORRETA
+
+8 - How can you open a link in a new tab/browser window?
+Como você pode abrir um link em uma nova aba / janela do navegador?
+
+A - <a href="url" new>
+B - <a href="url" target="_blank">  ALTERNATIVA CORRETA
+C - <a href="url" target="new">
+D - <a href="url" new ="url">
+
+9 - Which of these elements are all <table> elements?
+Quais desses elementos são todos os elementos <table>?
+
+A - <table><tr><td>   ALTERNATIVA CORRETA
+B - <table><head><tfoot>
+C - <thead><body><tr>
+D - <table><tr><tt>
+
+10 - How can you make a numbered list?
+Como você pode fazer uma lista numerada?
+
+A - <ul>
+B - <list>
+C - <ol>     ALTERNATIVA CORRETA
+D - <dl>
+
+PROVA 2 PHP
+
+1 - O que significa o PHP?
+ 
+A - Hypertext Preprocessor    ALTERNATIVA CORRETA
+B - Personal Hypertext Processor
+C - Private Home Page
+D - Prototype hypertext page
+
+2 - PHP server scripts are surrounded by delimiters, which?
+Quais os delimitadores que cercam os scripts do PHP?
+
+A - <?php>...</?>
+B - <?php...?>    ALTERNATIVA CORRETA
+C - <script>...</script>
+D - <&>...</&>
+
+3 - Como você escreve "Hello World" em PHP
+
+A - "Hello World";
+B - Document.Write("Hello World");
+C - echo "Hello World";    ALTERNATIVA CORRETA
+D - <"Hello World">;
+
+4 - Todas as variáveis ​​no PHP começam com qual símbolo?
+
+A - &
+B - !
+C - $    ALTERNATIVA CORRETA
+D - #
+
+5 - Qual é a maneira correta de terminar uma instrução PHP?
+
+A - .
+B - New line
+C - ;  ALTERNATIVA CORRETA
+D - </php>
+
+6 - Como você obtém informações de um formulário que é enviado usando o método "get"?
+ 
+A - Request.Form;
+B - Request.QueryString;
+C - $_GET[];     ALTERNATIVA CORRETA
+D - <$_GET>
+
+7 - Qual é a maneira correta de se conectar a um banco de dados MySQL?
+
+A - mysql_select_db();
+B - mysql_connect();   ALTERNATIVA CORRETA
+C - connect();
+D - connect_db();
+
+8 - Qual é a maneira correta de criar uma função em PHP?
+
+A - Function_Myfunction();
+B - Myfunction()
+C - Create_function();
+D - Function Myfunction();   ALTERNATIVA CORRETA
+
+9 - A sintaxe do PHP é mais semelhante a:
+
+A - Java Script
+B - C  & perl     ALTERNATIVA CORRETA
+C - ASP
+D - Asp.net
+
+10 - Qual é a maneira correta de abrir o arquivo "time.txt" como legível?
+ 
+A - open("time.txt");
+B - open_file(“time.txt”);
+C - fopen(“time.txt”,”r”);     ALTERNATIVA CORRETA
+D - fopen(“time.txt”);
+
+
+PROVA 3 CSS
+
+1- O que significa o CSS?
+
+A - Creative Style Sheets
+B - Cascading Style Sheets    ALTERNATIVA CORRETA
+C - Colorful Style Sheets
+D - Computer Style Sheets
+
+2 - Qual é o HTML correto para se referir a uma folha de estilos externa?
+
+A - <stylesheet>mystyle.css</stylesheet>
+B - <link rel="stylesheet" type="text/css" href="mystyle.css">    ALTERNATIVA CORRETA
+C - <style src="mystyle.css">
+D - <link src="mystyle.css">
+
+3 - Qual tag HTML é usada para definir uma folha de estilo interna?
+
+A - <css>
+B - <script>
+C - <style>       ALTERNATIVA CORRETA
+D - <stylesheet>
+
+4 - Qual atributo HTML é usado para definir estilos embutidos?
+
+A - font
+B - styles
+C - style       ALTERNATIVA CORRETA
+D - class
+
+5 - Qual é a sintaxe CSS correta?
+
+A - body {color: black}       ALTERNATIVA CORRETA
+B - body:color=black;
+C - {body;color:black;}
+D - {body:color=black;}
+
+6 - Como você insere um comentário em um arquivo CSS?
+
+A - // this is a comment
+B - ' this is a comment
+C - /* this is a comment */    ALTERNATIVA CORRETA
+D - // this is a comment //
+
+7 - Qual propriedade é usada para alterar a cor do plano de fundo?
+
+A - color
+B - background-color    ALTERNATIVA CORRETA
+C - bgcolor
+D - background-collor
+
+8 - Como você adiciona uma cor de fundo para todos os elementos <h1>?
+
+A - h1 {background-color:#FFFFFF;}           ALTERNATIVA CORRETA
+B - all.h1 {background-color:#FFFFFF;}
+C - h1.all {background-color:#FFFFFF;}
+D - h1({background-color:#FFFFFF;})
+
+9 - Qual propriedade CSS é usada para alterar a cor do texto de um elemento?
+
+A - text-color
+B - color       ALTERNATIVA CORRETA
+C - fgcolor
+D - color_text
+
+10 - Qual propriedade CSS controla o tamanho do texto?
+
+A - text-size
+B - font-size     ALTERNATIVA CORRETA
+C - text-style
+D - font-style
+
+Prova 4 Java Script
+
+1 - Dentro de qual elemento HTML colocamos o JavaScript?
+
+A - <js>
+B - <scripting>
+C - <script>        ALTERNATIVA CORRETA
+D - <javascript>
+
+2 - Qual é a sintaxe correta do JavaScript para alterar o conteúdo do elemento HTML abaixo?
+
+<p id="demo">This is a demonstration.</p>
+
+A - document.getElementById("demo").innerHTML = "Hello World!";   ALTERNATIVA CORRETA
+B - #demo.innerHTML = "Hello World!";
+C - document.getElement("p").innerHTML = "Hello World!";
+D - document.getElementByName("p").innerHTML = "Hello World!";
+
+3 - Onde é o lugar correto para inserir um JavaScript?
+
+A - The <head> section
+B - Both the <head> section and the <body> section are correct    ALTERNATIVA CORRETA
+C - The <body> section
+D - None of these
+
+4 - Qual é a sintaxe correta para se referir a um script externo chamado "xxx.js"?
+
+A - <script src="xxx.js">            ALTERNATIVA CORRETA
+B - <script href="xxx.js">
+C - <script name="xxx.js">
+D - none of these
+
+5 - Como você escreve "Hello World" em uma caixa de alerta?
+
+A - msg("Hello World");
+B - alertBox("Hello World");
+C - msgBox("Hello World");
+D - alert("Hello World");         ALTERNATIVA CORRETA
+
+6 - Como você cria uma função em JavaScript?
+ 
+A - function myFunction()            ALTERNATIVA CORRETA
+B - function = myFunction()
+C - function:myFunction()
+D - function::myFunction()
+
+7 - Como você chama uma função chamada "myFunction"?
+
+A - myFunction()                    ALTERNATIVA CORRETA
+B - call function myFunction()
+C - call myFunction()
+D - go myFunction() 
+
+8 - Como escrever uma instrução IF em JavaScript?
+
+A - if i == 5 then
+B - if i = 5
+C - if (i == 5)            ALTERNATIVA CORRETA
+D - if i = 5 then
+
+9 - Como escrever uma instrução IF para executar algum código se "i" não for igual a 5?
+
+A - if i <> 5
+B - if i =! 5 then
+C - if (i != 5)              ALTERNATIVA CORRETA
+D - if (i <> 5)
+
+10 - Como um loop FOR inicia?
+
+A - for (i = 0; i <= 5; i++)         ALTERNATIVA CORRETA
+B - for (i <= 5; i++) 
+C - for i = 1 to 5 
+D - for (i = 0; i <= 5) 
+
+Prova 5 - SQL
+
+1 - O que significa o SQL?
+
+A - Strong Question Language
+B - Structured Query Language           ALTERNATIVA CORRETA
+C - Structured Question Language
+D - Strong Question Language
+
+2 - Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas", onde o valor da coluna "Nome" começa com "a"?
+
+A - SELECT * FROM Persons WHERE FirstName='%a%'
+B - SELECT * FROM Persons WHERE FirstName LIKE 'a%'     ALTERNATIVA CORRETA       
+C - SELECT * FROM Persons WHERE FirstName LIKE '%a'
+D - SELECT * FROM Persons WHERE FirstName='a'
+
+3 - Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o "Nome" é "Peter" e o "Sobrenome" é "Jackson"?
+
+A - SELECT * FROM Persons WHERE FirstName='Peter' AND LastName='Jackson'         ALTERNATIVA CORRETA
+B - SELECT * FROM Persons WHERE FirstName<>'Peter' AND LastName<>'Jackson'
+C - SELECT FirstName='Peter', LastName='Jackson' FROM Persons
+D - SELECT firstName='Peter', LastName='Jackson' FROM name
+
+4 - Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o "Sobrenome" está em ordem alfabética entre (e incluindo) "Hansen" e "Pettersen"?
+
+A - SELECT * FROM Persons WHERE LastName BETWEEN 'Hansen' AND 'Pettersen'          ALTERNATIVA CORRETA
+B - SELECT LastName>'Hansen' AND LastName<'Pettersen' FROM Persons
+C - SELECT * FROM Persons WHERE LastName>'Hansen' AND LastName<'Pettersen'
+D - SELECT LastName>'Hansen' && LastName<'Pettersen' FROM Persons
+
+5 - Qual instrução SQL é usada para retornar apenas valores diferentes?
+
+A - SELECT FROM
+B - SELECT DIFFERENT
+C - SELECT UNIQUE
+D - SELECT DISTINCT              ALTERNATIVA CORRETA
+
+6 - Com o SQL, como você pode retornar todos os registros de uma tabela chamada "Pessoas" ordenada descendente por "Nome"?
+
+A - SELECT * FROM Persons ORDER FirstName DESC
+B - SELECT * FROM Persons SORT 'FirstName' DESC
+C - SELECT * FROM Persons ORDER BY FirstName DESC           ALTERNATIVA CORRETA
+D - SELECT * FROM Persons SORT BY 'FirstName' DESC
+
+7 - Com o SQL, como você pode inserir "Olsen" como o "Sobrenome" na tabela "Pessoas"?
+
+A - INSERT INTO Persons ('Olsen') INTO Name
+B - INSERT INTO Persons ('Olsen') INTO LastName
+C - INSERT ('Olsen') INTO Persons (LastName)
+D - INSERT INTO Persons (LastName) VALUES ('Olsen')        ALTERNATIVA CORRETA
+
+8 - Como você pode mudar "Hansen" para "Nilsen" na coluna "LastName" na tabela Persons?
+
+A - UPDATE Persons SET LastName='Hansen' INTO LastName='Nilsen'
+B - UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'         ALTERNATIVA CORRETA
+C - MODIFY Persons SET LastName='Nilsen' WHERE LastName='Hansen'
+D - MODIFY Persons SET LastName='Hansen' INTO LastName='Nilsen
+
+9 - Com o SQL, como você pode retornar o número de registros na tabela "Pessoas"?
+
+A - SELECT COLUMNS() FROM Persons
+B - SELECT COUNT() FROM Persons
+C - SELECT COLUMNS(*) FROM Persons
+D - SELECT COUNT(*) FROM Persons                ALTERNATIVA CORRETA
+
+10 - Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o valor da coluna "Nome" é "Pedro"?
+
+A - SELECT [all] FROM Persons WHERE FirstName LIKE 'Peter'
+B - SELECT * FROM Persons WHERE FirstName='Peter'
+C - SELECT * FROM Persons WHERE FirstName<>'Peter'
+D - SELECT [all] FROM Persons WHERE FirstName='Peter'
+
+Prova 6 - jQuery 
+
+1 - O que significa jQuery?
+
+A - jQuery is a JavaScript Library      ALTERNATIVA CORRETA
+B - jQuery is a JSON Library
+C - jQuery is a JSON LibraryScript
+D - jQuery is a LibraryScript
+
+2 - Qual é o código jQuery correto para definir a cor de fundo de todos os elementos p/ para vermelho?
+
+A - $(“p”).style(“background-color”,”red”);
+B - $(“p”).layout(“background-color”,”red”);
+C - $(“p”).css(“background-color”,”red”);               ALTERNATIVA CORRETA
+D - $(“p”).manipulate(“background-color”,”red”);
+
+3 - Com jQuery, veja o seguinte seletor: $ (“div.intro”). O que ele seleciona?
+
+A - All div elements with class=”intro”
+B - The first div element with id=”intro”
+C - The first div element with class=”intro”
+D - All div elements with id=”intro”              ALTERNATIVA CORRETA
+
+4 - Qual é o código jQuery correto para tornar todos os elementos div 100 pixels de altura?
+
+A - $(“div”).yPos(100)
+B - $(“div”).height(100)
+C - $(“div”).height=”100″            ALTERNATIVA CORRETA
+D - $(“div”).XPos(100)
+
+5 - Em que linguagem de script a jQuery é escrita?
+
+A - VBScript
+B - JavaScript         ALTERNATIVA CORRETA
+C - C++
+D - C#
+
+6 - Qual método jQuery deve ser usado para lidar com conflitos de nome?
+
+A - noConflict()            ALTERNATIVA CORRETA
+B - nameConflict()
+C - conflict()
+D - noNameConflict()
+
+7 - Qual método jQuery é usado para alternar entre adicionar / remover uma ou mais classes (para CSS) dos elementos selecionados?
+
+A - switchClass()
+B - toggleClass()            ALTERNATIVA CORRETA
+C - switch()
+D - altClass()
+
+8 - Qual função jQuery é usada para impedir que o código seja executado antes que o documento seja concluído?
+
+A - $(document).load()
+B - $(document).ready()        ALTERNATIVA CORRETA
+C - $(body).onload()
+D - $(document).sign()
+
+9 - Qual sinal o jQuery usa como atalho para o jQuery?
+
+A - the % sign
+B - the ? Sign
+C - the $ sign          ALTERNATIVA CORRETA
+D - the & sign
+
+10 - Qual método jQuery é usado para ocultar elementos selecionados?
+
+A - hidden()
+B - hide()        ALTERNATIVA CORRETA
+C - display(none)
+D - visible(false)
