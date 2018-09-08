@@ -6,6 +6,11 @@ window.onload = function(){
 
 	var cnv = document.querySelector("canvas");
 	var	ctx = cnv.getContext("2d");
+	ctx.font = "30px";
+ctx.fillStyle = "red";
+ctx.textAlign = "center";
+ctx.fillText("Hello World", cnv.width/2, cnv.height/2);
+ctx.zIndex = "+2";
 	var spriteSheet = new Image();
 	spriteSheet.src = "imgs/img.png";
 	var jogador = new Jogador(spriteSheet);

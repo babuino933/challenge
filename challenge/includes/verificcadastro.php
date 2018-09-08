@@ -13,7 +13,7 @@ if (isset($_POST["inputusuario"])) {
   }
   if ($jacadastrado == 0) {
     $data_atual = date('Y/m/d H:i:s');
-    $cadastrou = php_insert("INSERT INTO jogadores VALUES (DEFAULT,'{$_POST['inputnome']}','{$_POST['inputsobrenome']}','{$_POST['inputusuario']}','0','$data_atual','{$_POST['inputemail']}','{$_POST['inputsenha']}','{$_POST['inputdatanasc']}')");
+    $cadastrou = php_insert("INSERT INTO jogadores VALUES (DEFAULT,'{$_POST['inputnome']}','{$_POST['inputsobrenome']}','{$_POST['inputusuario']}','0','$data_atual','{$_POST['inputemail']}','{$_POST['inputsenha']}','{$_POST['inputdatanasc']}',1,1,0,0)");
     if ($cadastrou == 1) {
       echo "<script>alert('Cadastrado com sucesso')</script>";
       header("Location: http://localhost/challenge/index.php");
@@ -25,7 +25,7 @@ if (isset($_POST["inputusuario"])) {
 if(isset($_POST["email"])){
   foreach ($arrayUsuarios as $key => $value) {
     if ($value["email"] == $_POST["email"] || $value["senha"] == $_POST["senha"]) {
-      $_SESSION["email_logado"] = $_POST["email"];
+      $_SESSION["usuario"] = $value;
 
       header("Location: http://localhost/challenge/avc.php"); /* Redirect browser */
 exit();

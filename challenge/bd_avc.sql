@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Set-2018 às 06:16
+-- Generation Time: 08-Set-2018 às 06:33
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -39,16 +39,19 @@ CREATE TABLE `jogadores` (
   `senha` varchar(60) NOT NULL COMMENT 'senha do jogador',
   `data_nasci` date NOT NULL COMMENT 'data de nascimento do jogador',
   `nivel_prova` tinyint(1) NOT NULL,
-  `nmr_prova` tinyint(1) NOT NULL
+  `nmr_prova` tinyint(1) NOT NULL,
+  `pontuacao` decimal(4,2) NOT NULL,
+  `provas_feitas` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='tabela dos jogadores';
 
 --
 -- Extraindo dados da tabela `jogadores`
 --
 
-INSERT INTO `jogadores` (`id`, `nome`, `sobrenome`, `usuario`, `avatar`, `data_cadastro`, `email`, `senha`, `data_nasci`, `nivel_prova`, `nmr_prova`) VALUES
-(1, 'emmanuel', 'dallagnolo', 'nuel', '0', '2018-08-24 03:19:03', 'emmanueldallagnolo@gmail.com', '123', '2018-08-08', 1, 2),
-(2, 'andre', 'bitencourt', 'velho', '0', '2018-08-24 03:19:49', 'andre@gmail.com', '123', '1945-08-08', 1, 3);
+INSERT INTO `jogadores` (`id`, `nome`, `sobrenome`, `usuario`, `avatar`, `data_cadastro`, `email`, `senha`, `data_nasci`, `nivel_prova`, `nmr_prova`, `pontuacao`, `provas_feitas`) VALUES
+(1, 'emmanuel', 'dallagnolo', 'nuel', '0', '2018-08-24 03:19:03', 'emmanueldallagnolo@gmail.com', '123', '2018-08-08', 1, 3, '2.00', 2),
+(2, 'andre', 'bitencourt', 'velho', '0', '2018-08-24 03:19:49', 'andre@gmail.com', '123', '1945-08-08', 1, 4, '0.00', 1),
+(4, 'guilherme', 'lins', 'gordinho fibrado', '0', '2018-09-08 01:56:01', 'guilhermelins@gmail.com', '123', '2018-03-12', 1, 1, '1.00', 0);
 
 -- --------------------------------------------------------
 
@@ -61,6 +64,32 @@ CREATE TABLE `jogadores_has_questoes` (
   `questoes_id` int(10) UNSIGNED NOT NULL COMMENT 'atributo identificador da tabela questões',
   `resposta` varchar(45) NOT NULL COMMENT 'atributo onde guardará a resposta selecionada pelos jogadores'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='tabela associatiova de jogadores e questões';
+
+--
+-- Extraindo dados da tabela `jogadores_has_questoes`
+--
+
+INSERT INTO `jogadores_has_questoes` (`jogadores_id`, `questoes_id`, `resposta`) VALUES
+(1, 1, 'D'),
+(1, 2, 'A'),
+(1, 3, 'A'),
+(1, 4, 'A'),
+(1, 5, 'A'),
+(1, 6, 'A'),
+(1, 7, 'A'),
+(1, 8, 'A'),
+(1, 9, 'A'),
+(1, 10, 'C'),
+(1, 11, 'A'),
+(1, 12, 'A'),
+(1, 13, 'B'),
+(1, 14, 'A'),
+(1, 15, 'A'),
+(1, 16, 'A'),
+(1, 17, 'D'),
+(1, 18, 'B'),
+(1, 19, 'A'),
+(1, 20, 'A');
 
 -- --------------------------------------------------------
 
@@ -119,18 +148,19 @@ CREATE TABLE `provas` (
   `id` int(10) UNSIGNED NOT NULL COMMENT 'identicação das provas',
   `temas_id` int(10) UNSIGNED NOT NULL COMMENT 'atributo identificador da tabela temas',
   `niveis_id` int(10) UNSIGNED NOT NULL COMMENT 'atributo identificador da tabela níveis',
-  `nome` varchar(45) NOT NULL COMMENT 'nome das provas '
+  `nome` varchar(45) NOT NULL COMMENT 'nome das provas ',
+  `gato_prova` int(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='tabela de provas';
 
 --
 -- Extraindo dados da tabela `provas`
 --
 
-INSERT INTO `provas` (`id`, `temas_id`, `niveis_id`, `nome`) VALUES
-(1, 1, 1, 'Introdução HTML'),
-(2, 2, 1, 'Introdução PHP'),
-(3, 3, 1, 'Introdução CSS'),
-(4, 4, 2, 'Introdução Java Script');
+INSERT INTO `provas` (`id`, `temas_id`, `niveis_id`, `nome`, `gato_prova`) VALUES
+(1, 1, 1, 'Introdução HTML', 0),
+(2, 2, 1, 'Introdução PHP', 0),
+(3, 3, 1, 'Introdução CSS', 0),
+(4, 4, 2, 'Introdução Java Script', 0);
 
 -- --------------------------------------------------------
 
@@ -283,7 +313,7 @@ ALTER TABLE `temas`
 -- AUTO_INCREMENT for table `jogadores`
 --
 ALTER TABLE `jogadores`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'indetificação da tabela jogadores', AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'indetificação da tabela jogadores', AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `niveis`

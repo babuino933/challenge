@@ -8,6 +8,9 @@
         background-image: url('imgs/computador.png');
 
       }
+      div#cse >div>div>div>div {
+          margin-top: 60px;
+      }
     </style>
   </head>
   <body>

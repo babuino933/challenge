@@ -1,0 +1,87 @@
+#nome_cadastro {
+margin-left: 90px;
+margin-top: 59px;
+}
+
+#sobrenome_cadastro {
+margin-left: 90px;
+margin-top: -45px;
+}
+
+#sexo_cadastro {
+margin-left: 90px;
+margin-top: -56px;
+}
+#masc_radio {
+margin-left: 143px;
+margin-top: -111px;
+    }
+
+#usuario_cadastro{
+  margin-left: 90px;
+    margin-top: 22px;
+  }
+
+  #email_cadastro{
+    margin-left: 50px;
+    margin-top: -47px;
+
+  }
+
+  #senha_cadastro {
+    margin-left: 90px;
+      margin-top: -54px;
+
+  }
+
+  #csenha_cadastro {
+    margin-left: 85px;
+    margin-top: -71px;
+
+  }
+
+
+
+#dnasc_cadastro {
+  margin-left: 82px;
+    margin-top: -85px;
+
+
+}
+
+#inputdatanasc {
+  margin-left: 250px;
+    margin-top: -88px;
+
+}
+
+#botao_cadastrar {
+  margin-left: 111px;
+    margin-top: -48px;
+
+}
+
+
+    .inputForm {
+      background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+    font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Indie Flower', cursive;
+
+    }
+    .inputForm:focus{
+
+      background-color: transparent;
+    }
+    .newFont{
+      font-family: 'Nanum Gothic', sans-serif;
+      font-family: 'Indie Flower', cursive;
+
+    }
+
+
+
+
+    }
