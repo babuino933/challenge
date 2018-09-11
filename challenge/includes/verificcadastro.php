@@ -22,12 +22,16 @@ if (isset($_POST["inputusuario"])) {
     }
   }
 }
+//login
 if(isset($_POST["email"])){
   foreach ($arrayUsuarios as $key => $value) {
-    if ($value["email"] == $_POST["email"] || $value["senha"] == $_POST["senha"]) {
+    if ($value["email"] == $_POST["email"] && $value["senha"] == $_POST["senha"]) {
       $_SESSION["usuario"] = $value;
-
-      header("Location: http://localhost/challenge/avc.php"); /* Redirect browser */
+      if (($value["nmr_prova"] == 1) && ($value["nivel_prova"] == 1)) {
+        header("Location: http://localhost/challenge/tutorial.php");
+      }else{
+      header("Location: http://localhost/challenge/avc.php");
+    } /* Redirect browser */
 exit();
       break;
     }

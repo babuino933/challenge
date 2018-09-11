@@ -20,12 +20,17 @@
       background-position: center;
 
       }
+      #login{
+
+      }
     </style>
 <?php include_once("ranking.php") ?>
 <script type="text/javascript">
   function abreranking() {
     document.getElementById('divranking').style.visibility="visible";
     document.getElementById('botaosairranking').style.visibility="visible"
+
+
   }
 </script>
   </head>
@@ -39,7 +44,7 @@
           <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required>
           <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
           <a href="cadastro.php">Ainda não sou cadastrado</a><br>
-          
+
           <img src="imgs/livrodourado.png" id="rankingopen" onclick="abreranking()">
           <p class="mt-5 mb-3 text-muted">copelraite 2017-2018</p>
         </form>

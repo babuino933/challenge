@@ -4,18 +4,16 @@ window.onload = function(){
 
 
 
-	var cnv = document.querySelector("canvas");
+	var cnv =document.getElementById("tela");
 	var	ctx = cnv.getContext("2d");
-	ctx.font = "30px";
-ctx.fillStyle = "red";
-ctx.textAlign = "center";
-ctx.fillText("Hello World", cnv.width/2, cnv.height/2);
-ctx.zIndex = "+2";
+
+//ctx.zIndex = "+2";
 	var spriteSheet = new Image();
 	spriteSheet.src = "imgs/img.png";
 	var jogador = new Jogador(spriteSheet);
 	var camera = new Camera(cnv);
 	var scene = new Image();
+	debugger;
 	scene.src = "imgs/cenatotal.png";
 	jogador.speed = 8;
 
@@ -59,6 +57,7 @@ ctx.zIndex = "+2";
 				blockRect(jogador, blk);
 			}
 		}
+
 	}
 
 	function keydownHandler(e){
@@ -96,6 +95,16 @@ ctx.zIndex = "+2";
 		ctx.restore();
 
 
+
+	}
+
+	function desenhaTema(){
+		ctx.font = "30px";
+		ctx.fillStyle = "red";
+		
+		ctx.textAlign = "center";
+		ctx.fillText("Hello World", 400, 300	);
+
 	}
 
 
@@ -103,11 +112,14 @@ ctx.zIndex = "+2";
 		window,requestAnimationFrame(loop,cnv);
 		update();
 		draw();
+		desenhaTema();
 		teleportajogador(jogador,1126,672);
 		funcaocse(jogador);
 		funcaoprova(jogador);
 		//	paredecolide();
 	}
+
+
 
 }
 

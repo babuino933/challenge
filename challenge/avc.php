@@ -32,18 +32,22 @@ include_once("mostraprovas.php")
 
   #tela{
 
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top: 100px;
         top: 0px;
         position: absolute;
   }
   #navbar{
     top: -325px;
-  left: 300px;
+  left: 400px;
   width: 800px;
   }
 
+ body{
+   background-image: url("imgs/fundojogo.jpg");
 
+   background-repeat: no-repeat;
+ }
   </style>
   <script>
   function fechacse() {
@@ -79,7 +83,7 @@ include_once("passounivel.php");
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-sm btn-outline-secondary" type="button" onclick="mostraprovas();">Smaller button</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" onclick="mostraprovas();">Respostas</button>
         </li>
         <!-- <li class="nav-item">
             <img src="imgs/logout.png" width="40" height="40" onclick="logout();" alt="">
