@@ -54,10 +54,10 @@ include_once("mostraprovas.php")
     document.getElementById("cse").style.visibility = "hidden";
     document.getElementById("csebd").style.visibility = "hidden";
   }
-// function logout() {
-//   session_destroy();
-//   window.location = "http://localhost/challenge/index.php";
-// }
+function logout() {
+  session_destroy();
+  window.location = "http://localhost/challenge/index.php";
+}
 
   </script>
 </head>
@@ -69,7 +69,20 @@ include_once("passounivel.php");
 ?>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="navbar">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #4F4F2F;" id="navbar">
     <a class="navbar-brand" >
       <img src="imgs/logo.png" width="40" height="40" alt="">
     </a>
@@ -80,11 +93,11 @@ include_once("passounivel.php");
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <button class="btn btn-sm btn-outline-secondary" type="button" onclick="logout();">Home</button>
         </li>
         <li class="nav-item">
           <button class="btn btn-sm btn-outline-secondary" type="button" onclick="mostraprovas();">Respostas</button>
-        </li>
+        </li> -->
         <!-- <li class="nav-item">
             <img src="imgs/logout.png" width="40" height="40" onclick="logout();" alt="">
         </li> -->

@@ -22,7 +22,7 @@
   </style>
 </head>
 <body class="text-center">
-  <form class="form-signin" action="verificcadastro.php" method="post">
+  <form class="form-signin" action="includes/verificcadastro.php" method="post">
     <br>
     <br>
 

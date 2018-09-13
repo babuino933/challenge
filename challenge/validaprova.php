@@ -1,14 +1,4 @@
-<?php session_start(); ?>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <script type="text/javascript">
-
-  </script>
-</head>
-<body>
-  <?php
+<?php session_start();
   include_once("includes/banco_de_dados.php");
   //tava dando erro com o numero da prova
   $arrayUsuarios = select("SELECT * FROM jogadores WHERE id = {$_SESSION['usuario']['id']}");
@@ -43,15 +33,13 @@
       $nmr_prova_atual += 1;
       $usuario_provas_feitas = 0;
       $mudar_nivel = sql_delete_update("UPDATE jogadores SET nivel_prova= {$nivel_prova_atual}, nmr_prova = {$nmr_prova_atual}, provas_feitas = {$usuario_provas_feitas} WHERE id = {$_SESSION['usuario']['id']}");
-
+      echo "passounivel";
     }else if($usuario_provas_feitas != 3){
       $nmr_prova_atual += 1;
       $mudar_nivel = sql_delete_update("UPDATE jogadores SET nmr_prova = {$nmr_prova_atual},provas_feitas = {$usuario_provas_feitas} WHERE id = {$_SESSION['usuario']['id']}");
+echo "nao passounivel";
       }
 
-    header("Location: http://localhost/challenge/avc.php");
+  //  header("Location: http://localhost/challenge/avc.php");
   }
   ?>
-
-</body>
-</html>
